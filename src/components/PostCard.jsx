@@ -1,11 +1,12 @@
 "use client";
 import Link from "next/link";
+import "./Navbar.css";
 
 // RCC
 function PostCard({ post }) {
   return (
     <div className="bg-gray-950 p-10 ">
-      <Link href={`/posts/${post.id}`}>
+      <Link href={`/posts/${post.id}`} className="link">
         <h3 className="text-xl font-bold mb-4 ">
           {post.id}.{post.title}
         </h3>
